@@ -1,3 +1,9 @@
+#install and run in maya
+from importlib import rerload
+import exportFBX
+reload(exportFBX)
+
+#start code
 import pymel.core as pm
 import maya.cmds as cmds
 import maya.mel as mel
