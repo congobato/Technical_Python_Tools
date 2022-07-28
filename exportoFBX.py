@@ -44,7 +44,8 @@ class FBXUtils:
          mel.eval("FBXExportUpAxis y")
          mel.eval("FBXExportFileVersion FBX2020")
          mel.eval("FBXExportConvertUnitString -v cm")
-
+         mel.eval("FBXExportInputConnection -v false;")
+        
          animation_step = int(step)
          mel.eval("FBXExportBakeComplexStep -v {step}".format(step=animation_step))
 
