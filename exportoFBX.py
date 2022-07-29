@@ -1,3 +1,8 @@
+#run file pyc
+import importlib
+import exportoFBX
+importlib.reload(exportoFBX)
+
 #start code
 import pymel.core as pm
 import maya.cmds as cmds
